@@ -1,0 +1,31 @@
+{
+    "xsappname": "task04",
+    "tenant-mode": "dedicated",
+    "scopes": [
+      {
+        "name": "$XSAPPNAME.Read",
+        "description": "Read access"
+      },
+      {
+        "name": "$XSAPPNAME.Write",
+        "description": "Write access"
+      }
+    ],
+    "role-templates": [
+      {
+        "name": "Viewer",
+        "description": "View data",
+        "scope-references": [
+          "$XSAPPNAME.Read"
+        ]
+      },
+      {
+        "name": "Editor",
+        "description": "Edit data",
+        "scope-references": [
+          "$XSAPPNAME.Read",
+          "$XSAPPNAME.Write"
+        ]
+      }
+    ]
+  }

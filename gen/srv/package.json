@@ -1,0 +1,26 @@
+{
+  "name": "task04",
+  "version": "1.0.0",
+  "description": "A CAP application without UI, with approuter",
+  "private": true,
+  "scripts": {
+    "build": "cds build/all --clean",
+    "deploy": "cds deploy",
+    "start": "cds run"
+  },
+  "dependencies": {
+    "@sap/cds": "8.2.3",
+    "express": "^4.17.1"
+  },
+  "cds": {
+    
+    "requires": {
+      "db": {
+        "kind": "sqlite"
+      },
+      "auth": {
+        "kind": "xsuaa"
+      }
+    }
+  }
+}

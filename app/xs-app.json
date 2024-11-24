@@ -1,0 +1,12 @@
+{
+    "welcomeFile": "index.html",
+    "authenticationMethod": "route",
+    "routes": [
+        {
+            "source": "^/catalog/(.*)$",
+            "target": "$1",
+            "destination": "srv-api",
+            "authenticationType": "xsuaa"
+        }
+    ]
+}
